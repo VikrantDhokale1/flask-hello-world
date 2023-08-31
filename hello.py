@@ -1,12 +1,13 @@
 # Shamelessly copied from http://flask.pocoo.org/docs/quickstart/
 
+
 from flask import Flask
+
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
-    return 'Hello World!'
+def hello():
+    return "Hello from your Python app!"
 
-if __name__ == '__main__':
-    app.run()
-
+if _name_ == '__main__':
+    app.run(host='0.0.0.0', port=8000)
